@@ -1,7 +1,7 @@
 function sum(a) {
-  return function (b) {
+  return (function (b) {
     return a + b;
-  };
+  })();
 }
 
 const addOne = sum(1);
